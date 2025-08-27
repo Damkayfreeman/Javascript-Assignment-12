@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator and Callback</title>
+</head>
+<body>
+
+    <script>
+        // 1. Spread Operator – Copy & Update
+
+        const fruits = ["apple", "banana", "mango"]; 
+
+        // Make a copy of the array using the spread operator
+        const newFruits = [...fruits];
+
+        // Add a new fruit "orange" to the copied array
+        const  moreFruits = [...fruits, "orange"];
+
+         // Print both arrays to show the original is not changed
+         console.log("Original Fruits:", ...fruits);
+         console.log("Copied and updated:", moreFruits);
+
+
+
+
+    </script>
+    
+</body>
+</html>
