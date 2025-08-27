@@ -1,31 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spread Operator and Callback</title>
 </head>
+
 <body>
 
     <script>
         // 1. Spread Operator – Copy & Update
 
-        const fruits = ["apple", "banana", "mango"]; 
+        const fruits = ["apple", "banana", "mango"];
 
         // Make a copy of the array using the spread operator
         const newFruits = [...fruits];
 
         // Add a new fruit "orange" to the copied array
-        const  moreFruits = [...fruits, "orange"];
+        const moreFruits = [...fruits, "orange"];
 
-         // Print both arrays to show the original is not changed
-         console.log("Original Fruits:", ...fruits);
-         console.log("Copied and updated:", moreFruits);
+        // Print both arrays to show the original is not changed
+        console.log("Original Fruits:", ...fruits);
+        console.log("Copied and updated:", moreFruits);
+
+        // 2. Spread Operator – Merge Objects
+
+        const user = {
+            name: "Alice",
+            age: 20
+        };
+
+        const address = {
+            city: "London",
+            country: "Uk",
+        };
+
+        // Use the spread operator to combine them into a new object
+        const userInfo = { ...user, ...address };
+        console.log("User Info:", userInfo);
+
+        // Add an extra property: role = "student"
+        const updateInfo = { ...user, ...address, role: "Student" };
+        console.log("Extra Property:", updateInfo);
+
+        // 3. Callback Function – Process Numbers
+
+          function processNumbers(numbers, callback) {
+            
+
+          }
+           
+        
+    
+           
+
+       
+
+
+
+
+
 
 
 
 
     </script>
-    
+
 </body>
+
 </html>
