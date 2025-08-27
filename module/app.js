@@ -14,6 +14,16 @@ console.log(greet('Jarule'));
 
 // Assignment 3: User Module
 
+import getUser, {role}  from './user.js';
+console.log(getUser());
+console.log(role())
+
+// 
+
+import animals from './animals.js'
+animals.map(animals => {
+    console.log(`I love ${animals}`);
+});
 
 
 
